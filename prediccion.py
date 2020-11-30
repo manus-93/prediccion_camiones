@@ -7,7 +7,7 @@ from tensorflow.keras.preprocessing.image import img_to_array
 import base64
 from io import BytesIO
 
-ruta = "texto1.txt"
+ruta = "texto1.txt"                                                 # aca ingreso l ruta de los textos en base 64
 
 def get_model():
     global model
@@ -27,7 +27,7 @@ def preprocess_image(image, target_size):
     image /= 255
     return image
 
-x=open(ruta,"r")                                               # aca ingreso l ruta de los textos en base 64
+x=open(ruta,"r")                                               
 encoded=x.read()
 print(encoded[0:10])                                                # imprimo primeras 10 lineas del encode
 
